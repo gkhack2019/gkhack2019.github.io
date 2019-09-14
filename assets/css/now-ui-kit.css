@@ -6175,3 +6175,173 @@ td.rdtYear:hover {
     display: none;
 }
 
+.demo{ background: #3a3b3c; position: relative; padding-top: 70px; padding-bottom: 70px;}
+.counter{
+    padding: 0 20px 20px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.counter:after{
+    content: "";
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to right,#a50404,#fd0b0b);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.counter:hover:after{ box-shadow: 0 0 15px rgba(255,255,255,0.6); }
+.counter .counter-content{
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    padding: 25px 0 25px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 80% 85%, 70% 100%, 60% 85%, 0 85%, 0 15%);
+    clip-path: polygon(100% 0, 100% 85%, 80% 85%, 70% 100%, 60% 85%, 0 85%, 0 15%);
+}
+.counter .counter-icon{
+    font-size: 40px;
+    color: #f90909;
+    transform: rotateX(360deg);
+    transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-icon{ transform: rotateX(0); }
+.counter .counter-value{
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #606060;
+    margin: 0 0 60px;
+}
+.counter .title{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+.counter.green:after{ background: linear-gradient(to right,#b4d93d,#789532); }
+.counter.green .counter-icon{ color: #789532; }
+.counter.orange:after{ background: linear-gradient(to right,#f9b840,#f07d24); }
+.counter.orange .counter-icon{ color: #f07d24; }
+.counter.pink:after{ background: linear-gradient(to right,#f56a87,#ca3e57); }
+.counter.pink .counter-icon{ color: #ca3e57; }
+@media only screen and (max-width: 1200px){
+    .counter .title{ font-size: 16px; }
+}
+@media only screen and (max-width: 990px){
+    .counter{ margin-bottom: 30px; }
+}
+
+.landing {
+  background: #ca0909;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.page {
+  border-radius: 8px;
+  box-shadow: 0 9px 50px 4px rgba(0, 0, 0, 0.4);
+  background: white;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (min-width: 1024px) {
+.page {
+  max-width: 100%;
+}
+}
+.page {
+  height: 600px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+page .image {
+  margin-left: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #d80202;
+  width: 65%;
+}
+.page .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.page .about .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .col-md-4 .image {
+    display: none;
+}
+}
+
+.btn-con {
+  background: #ff0000;
+    padding: 1px 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-con:hover {
+  background: #000;
+  
+}
+
+#map::before {content: 'Prevously... Geeks Came From:';
+  color: #fff; 
+  background: #ff0000c9; 
+  font-weight: 800;
+  font-size: 26px; 
+  top: 60px;
+  z-index: 100;
+  padding: 10px 20px 10px 2px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+  position: relative;
+}
