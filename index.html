@@ -139,15 +139,17 @@
                     </div>
                     <div class="content content--second">
                         <article class="item" style="background: #f5f5f9;">
-                  <div class="item__img" style=" background: url(https://live.staticflickr.com/4812/44339820410_8761ac0d8b_z_d.jpg); background-size: cover;"></div>
+                  <div class="item__img" style=" background: url(assets/img/skate.jpg); background-size: cover;"></div>
                             <div class="item__content" style="padding: 12vh 0vw 0 3vw;">
                                 <a class="item__content-back btn-con" style="color: #fff;"><i class="fa fa-arrow-left"></i> back</a> 
                                 <h2 class="item__content-title"><b>The 2019 Theme</b></h2>
                                 <h3 class="item__content-subtitle">A Geek Culture of Sustainable Innovation</h3>
                                 <div class="item__content-text">
-                                    <p>Now, when anything attracted his attention he always asked what it meant; and his mother, or more frequently Uncle Maxim, would explain to him the nature of the objects or of the creatures that caused these various sounds.</p>
-                                    <p>His mother’s explanations, more lively and graphic, impressed the boy with greater force; but sometimes this impression would be too painful. </p>
-                                    <p>Upon the features of the young woman, herself suffering, could be read the expression of her inmost feelings, and in her eyes a silent protest or a look of pain, as she strove to convey to the child an idea of form and color.</p>
+                                    <p>The Hackathon will build capacity in terms of new skills and also help the teams understand and outline policy and regulations in the process. Whether it's Civic Tech, business/enterprise, communal based solutions, GKHack19 challenges local techies and innovators to build with sustainability in mind.
+<br><br>
+                                        A team may choose to build a solution from one of the aspects outlined below. GKHack19 is a platform to drive the shift for local techies and innovators to have a better capacity in developing innovation that takes up, market aligned and sustainable.
+                                        
+                                        </p>
                                 </div>
                             </div>
                         </article>
@@ -175,6 +177,39 @@
                 <div class="cursor">  
                     <div class="cursor__inner cursor__inner--circle"></div>
                 </div>
+                
+                <section class="section-features">
+
+                        <div class="container">
+                    
+                            <ul class="features-list">
+                    
+                                <li class="feature-item">
+                                    <div class="content-col">
+                                        <div class="title">
+                                            <h3 style="margin-bottom: 0px;"><b>About GKHack2019</b></h3>
+                                        </div>
+                                        <div class="desc text-left">
+                                           
+                                            <p>
+                                                The Geekulcha Annual Hackathon is set against the Geekulcha’s focus on the need to help channel a sustainable Geek Culture in South Africa. Ahead of the Hackathon, a partners and sponsors breakfast event will be hosted to connect and thank all those involved in supporting the hackathon.
+<br><br>
+This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants will need to register to take part. Teams of up to 6 members will be formed during the Hackathon and mentors will be allocated to the teams.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="img-col">
+                                        <div class="img-wrap youtube-video-background" style="overflow: hidden;">
+                                            <iframe class="youtube-video" data-yt-id="6NDYf3RZ1eY" frameborder="0" allowfullscreen="1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/HGpdalA9Fmk" id="widget4" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 741.333px; height: 417px;"></iframe>
+                                        </div>
+                                    </div>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                    
+                    </section>
 
                 <div class="demo" id="info">
                         <div class="container">
@@ -225,6 +260,30 @@
                     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
                     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
                     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-clustering.js"></script>
+
+                    <style>
+                        .H_ib_body {
+                         position: relative;
+    background-color: #040404d1;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                         position: absolute;
+                         bottom: .5em;
+                         padding: 0px 20px 0px 0px ;
+                         border-radius: .2em;
+                         margin-right: -1em;
+                         right: 0;
+                                    }
+                                    .H_ib_content {
+    min-width: 6em;
+    margin: 0px;
+    padding: 0px; }
+                    </style>
                     
                     <div id="map" style="width: 100%; height: 100vh; background: white; margin-top: -40px;" />
                     <script type="text/javascript" src="assets/js/script2.js"></script>
@@ -307,11 +366,15 @@
                          var array = [{"lat":"-25.752262", "lng":"28.263748", "name":"Code Tribe", "who":"varsity", "province":"Gauteng", "website":"www.o", "focus":"mobile apps"},
                          {"lat":"-26.204103", "lng":"28.047304", "name":"Johannesburg", "who":"varsity", "province":"Gauteng", "website":"www.o", "focus":"mobile apps"},
                          {"lat":"-28.737810", "lng":"24.766211", "name":"Kimberley", "who":"varsity", "province":"Gauteng", "website":"www.o", "focus":"mobile apps"}]
-                    
+                         //array[i].province
                           var i;
                       for (i=0; array.length; i++) {
                             addMarkerToGroup(group, {lat:array[i].lat, lng:array[i].lng},
-                            '<div  class="dl-info"><a >' + array[i].name + ', ' + array[i].province + '</a></div>');
+                            '<div class="map-card horizontal"><div class="card-image">' +
+                '<img src="assets/img/skate.jpg"></div><div class="card-stacked">' +
+                '<div class="card-content"><b>' + array[i].name + 
+                    '</b><br><p>I am a very simple card. I am good at containing small bits of information.</p>' +
+                '</div><div class="card-action">Project</div></div></div>');
                        }
                     }
                     
@@ -334,35 +397,21 @@
                 <div class="col s12 m3"><img src="assets/img/flags/NA.png" alt="" height="25px"></div>
 
         </div>
-        <div class="row">
-                <div class="col s12 m12">
-                  <h5>Colored</h5>
-                  <div class="card blue">
-                    <div class="card-content white-text">
-                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-tabs">
-                      <ul class="tabs tabs-fixed-width tabs-transparent">
-                        <li class="tab"><a href="#test1" class="">Test 1</a></li>
-                        <li class="tab"><a class="" href="#test2">Test 2</a></li>
-                        <li class="tab"><a href="#test3" class="active">Test 3</a></li>
-                      <li class="indicator" style="left: 189px; right: 0px;"></li></ul>
-                    </div>
-                    <div class="card-content blue lighten-5">
-                      <div id="test1" style="display: none;" class="">Test 1</div>
-                      <div id="test2" class="" style="display: none;">Test 2</div>
-                      <div id="test3" style="display: block;" class="active">Test 3</div>
-                    </div>
-                  </div>
-                </div>
-              
-              </div>
             </div>
+
+            
 </section>
-<section class=" ss-style-triangles" style="background: #d60909;">
+<style>
+    .ss-style-triangles::before {
+    top: -50px;
+    background: #d60909;
+    box-shadow: 0px -5px 5px -5px #131619;
+}
+</style>
+<section class=" ss-style-triangles" style="background: #d60909; box-shadow: 5px 5px 5px 5px #131619;">
         <div class="column text">
-            <h2>Objectively innovate empowered manufactured products</h2><br>
-            <p>Galaxies a still more glorious dawn awaits shores of the cosmic ocean bits of moving fluff the only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>
+            <h2 class="center"><b>Why Attend #GKHack19...</b></h2><br><br>
+            <p class="text-white"> only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>
         </div>
         <div class="column">
             <span class="fa fa-users fa-4x"></span>
@@ -552,6 +601,7 @@
 <script src="https://tympanus.net/Development/AnimatedImageColumns/js/bezier-easing.min.js"></script>
 <script src="https://tympanus.net/Development/AnimatedImageColumns/js/TweenMax.min.js"></script>
 <script src="https://tympanus.net/Development/AnimatedImageColumns/js/demo.js"></script>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
  <script type="text/javascript">
