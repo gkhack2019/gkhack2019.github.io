@@ -6464,3 +6464,211 @@ section p {
   height: 90px;
   padding: 6px;
 }
+#movie-card-list {
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+.moviecard .movie-poster, #header2 {
+   display: none; 
+} }
+
+.movie-card {
+	background-image: url(https://live.staticflickr.com/1912/44931959942_9d270e2bd8_c_d.jpg);
+	background-size: contain;
+	background-position: 0% 80%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 550px;
+	display: block;
+	margin: 0vh auto;
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+			box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .movie-card:nth-child(2) {
+	background-image: url("http://www.blastr.com/sites/blastr/files/back-to-the-future-part-ii-original.jpg");
+	background-position: -20% 80%;
+  }
+  
+  .movie-card:nth-child(3) {
+	background-image: url("../img/security.jpg");
+	background-position: -20% 80%;
+  }
+
+  .color-overlay::before {content: 'Minister Ayanda Dlodlo Coding With C#';
+    padding: 1px 10px;
+    background: #e6e6e68c;
+    color: #0a0000;
+    font-weight: bold;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    }
+  
+  .color-overlay {
+	width: 100%;
+	height: 100%;
+	border-radius: 0px;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(42, 159, 255, 0.2)), color-stop(40%, #212120), to(#212120));
+	background: linear-gradient(to right, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
+	background-blend-mode: multiply;
+  }
+  
+  .movie-card h1, .movie-card h2, .movie-card h3 {
+	font-family: "Montserrat", helvetica, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 1;
+	font-weight: 400;
+  }
+  
+  .movie-content {
+	width: 50%;
+	display: block;
+	position: relative;
+	float: right;
+	padding-right: 1em;
+	padding-left: 1em;
+  }
+  .movie-content .movie-title {
+	color: #ffffff;
+	margin-bottom: .25em;
+	opacity: .75;
+  }
+  .movie-content .movie-info {
+	letter-spacing: 2px;
+	font-size: .8em;
+	color: #ccc;
+	line-height: 1;
+	margin: 0;
+	font-weight: 700;
+	opacity: .5;
+  }
+  .movie-content .movie-header {
+	margin-bottom: 2em;
+  }
+  .movie-content .movie-desc {
+	font-weight: 300;
+	font-size: 14px;
+	color: #fff;
+	opacity: .84;
+	margin-bottom: 1em;
+  }
+  
+  .btn {
+	padding: .8em 2em;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+  }
+  
+  .btn-outline {
+		padding: .3em 1em;
+	background-color: transparent;
+	border: 3px solid #ffffff;
+  }
+  
+  .btn::before {
+	font-family: 'Material Icons';
+	
+	font-size: 1.5em;
+	padding-right: .5em;
+  }
+  
+  .btn-outline:hover {
+	border-color: #fff;
+	color: #fff;
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+			box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+  }
+  
+  .movie-share {
+	padding: 1em;
+	display: none;
+	width: 25%;
+  }
+  
+  .movie-share__icon i {
+		font-size: 30px;
+	margin-left: .5em;
+	color: #ffffff;
+	mix-blend-mode: lighten;
+	opacity: .4;
+  }
+  
+  .movie-share__icon i:hover {
+	
+	opacity: 1;
+	mix-blend-mode: lighten;
+  }
+  
+  @media (max-width: 1000px) {
+	.movie-content {
+	  width: 100%;
+	  max-width: 100%;
+	}
+  }
+  @media (max-width: 800px) {
+	.movie-card {
+	  width: 100%;
+	  max-width: 100%;
+	}
+  }
+  @media (max-width: 600px) {
+	.movie-card, .movie-card:nth-child(2), .movie-card:nth-child(3) {
+	  background-position: 50% 0%;
+	  background-size: cover;
+	  height: 800px;
+	}
+  
+	.color-overlay {
+	  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.65)), color-stop(60%, #212120), to(#212120));
+	  background: linear-gradient(to bottom, rgba(37, 37, 37, 0.65) 0%, #212120 60%, #212120 100%);
+	}
+  
+	.movie-content {
+	  margin-top: 4.2em;
+	  width: 100%;
+	}
+  
+	.movie-share {
+	  display: block;
+	  width: 100%;
+	}
+  }
+  
+    @media (max-width: 480px) {
+	.movie-card, .movie-card:nth-child(2), .movie-card:nth-child(3) {
+	  background-position: 50% 0%;
+	  background-size: cover;
+	  height: 750px;
+	}
+  
+	.color-overlay {
+	  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.65)), color-stop(60%, #212120), to(#212120));
+	  background: linear-gradient(to bottom, rgba(37, 37, 37, 0.65) 0%, #212120 60%, #212120 100%);
+	}
+  
+	.movie-content {
+	  margin-top: 4.2em;
+	  width: 100%;
+	}
+  
+	.movie-share {
+	  display: block;
+	  width: 100%;
+	}
+  }
+  .single-services {
+    background: #00000014;
+    padding: 10px;
+    box-shadow: 10px 10px;
+  }
+  .services-icon {
+      border: 2px solid #f5f5f5;
+      padding: 15px;
+    line-height: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
