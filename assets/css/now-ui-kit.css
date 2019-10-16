@@ -1208,7 +1208,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: relative;
   z-index: -1; }
 
-.btn,
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
   font-weight: 400;
@@ -1221,7 +1220,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   cursor: pointer;
   background-color: #888888;
   color: #FFFFFF; }
-  .btn:hover, .btn:focus, .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus, .btn:active:hover, .btn.active:hover,
   .show > .btn.dropdown-toggle,
   .show > .btn.dropdown-toggle:focus,
   .show > .btn.dropdown-toggle:hover,
@@ -1242,10 +1240,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     background-color: #979797;
     color: #FFFFFF;
     box-shadow: none; }
-  .btn:hover,
   .navbar .navbar-nav > a.btn:hover {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17); }
-  .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active,
   fieldset[disabled] .btn,
   fieldset[disabled] .btn:hover,
   fieldset[disabled] .btn:focus,
@@ -1997,9 +1993,6 @@ fieldset[disabled]
 .input-group.no-border .input-group-text {
   padding: 11px 0 11px 19px; }
 
-.form-group .form-control,
-.input-group .form-control {
-  padding: 10px 18px 10px 18px; }
   .form-group .form-control + .input-group-text,
   .input-group .form-control + .input-group-text {
     padding: 10px 18px 10px 0; }
@@ -6176,7 +6169,9 @@ td.rdtYear:hover {
 }
 
 .demo{     box-shadow: 5px 1px 10px 5px #585656;
-  background: #e0e0e0; position: relative; padding-top: 70px; padding-bottom: 70px;}
+  background: linear-gradient( to bottom, rgba(232, 8, 8, 0.92), /* #c7090985 */ rgba(255, 0, 0, 0.76) /* #00000059 */ ), /* bottom image */ url(../../assets/img/mzansi.jpeg) no-repeat center center / cover; box-shadow: 5px 5px 5px 5px #131619; position: relative; 
+  background-attachment: fixed;
+  padding-top: 70px; padding-bottom: 70px;}
 .counter{
     padding: 0 20px 20px;
     text-align: center;
@@ -6187,7 +6182,7 @@ td.rdtYear:hover {
     content: "";
     width: 100%;
     height: 75%;
-    background: linear-gradient(to right,#a50404,#fd0b0b);
+    background: linear-gradient(to right,#232323,#5a5858);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -6275,7 +6270,6 @@ td.rdtYear:hover {
 }
 }
 .page {
-  height: 600px;
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -6336,7 +6330,7 @@ page .image {
 
 #map::before {content: 'Prevously... 899 Geeks Came From:';
   color: #fff; 
-  background: #ff0000c9; 
+  background: #312f2fc9; 
   font-weight: 800;
   font-size: 26px; 
   top: 60px;
@@ -6556,32 +6550,6 @@ section p {
 	margin-bottom: 1em;
   }
   
-  .btn {
-	padding: .8em 2em;
-	background-color: rgba(255, 255, 255, 0.2);
-	color: white;
-  }
-  
-  .btn-outline {
-		padding: .3em 1em;
-	background-color: transparent;
-	border: 3px solid #ffffff;
-  }
-  
-  .btn::before {
-	font-family: 'Material Icons';
-	
-	font-size: 1.5em;
-	padding-right: .5em;
-  }
-  
-  .btn-outline:hover {
-	border-color: #fff;
-	color: #fff;
-	-webkit-box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
-			box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
-  }
-  
   .movie-share {
 	padding: 1em;
 	display: none;
@@ -6665,10 +6633,14 @@ section p {
     box-shadow: 10px 10px;
   }
   .services-icon {
-      border: 2px solid #f5f5f5;
+      border: 0px solid #f5f5f5;
       padding: 15px;
     line-height: 50%;
     border-radius: 50%;
     width: 20px;
     height: 20px;
+  }
+
+  .services-content p {
+    color: #ccc;
   }
