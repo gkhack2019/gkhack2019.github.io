@@ -97,11 +97,11 @@
               // Using jQuery's animate() method to add smooth page scroll
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
               $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
+                scrollTop: $(hash).offset().top - 70
+              }, 500, function(){
            
                 // Add hash (#) to URL when done scrolling (default click behavior)
-               // window.location.hash = hash;
+                window.location.hash = hash;
               });
             } // End if
           });
@@ -114,10 +114,15 @@
                   <div class="container nav-wrapper">
                     <a href="#!" class="brand-logo"><b>#GKHack19</b></a>
                     <ul class="right hide-on-med-and-down">
+                      
                       <li><a href="#about">About</a></li>
                       <li><a href="#info">InfoZone</a></li>
+                      <li><a href="#footprint">Footprint</a></li>
+                      <li><a href="#reason">Why Attend</a></li>
+                      <li><a href="#previous">Previous Hacks</a></li>
                       <li><a href="#startups">Startups</a></li>
-                      <li><a href="#sphatlo">Sphatlo</a></li>
+                      <li><a href="#partners">Partners/Sponsors</a></li>
+                      <li><a href="#register" class="btn btn-danger"><b>REGISTER</b></a></li>
                     </ul>
                   </div>
                 </nav>
@@ -146,13 +151,13 @@
 <main>
         <div class="frame">
                         <div class="frame__title-wrap">
-                            <h1 class="frame__title">South Africa Geek Culture - On The Ground</h1>
+                           <!-- <h1 class="frame__title" style="color: #ccc;">Building a Geek Culture of Sustainable Innovation</h1> -->
                         </div>
                         
                     </div>
                     <div class="content content--second">
                         <article class="item" style="background: #f5f5f9;">
-                  <div class="item__img" style=" background: url(assets/img/skate.jpg); background-size: cover;"></div>
+                  <div class="item__img" style=" background: url(https://live.staticflickr.com/7122/27610630380_b59a2e1baa_c_d.jpg); background-size: cover;"></div>
                             <div class="item__content" style="padding: 12vh 0vw 0 3vw;">
                                 <a class="item__content-back btn-con" style="color: #fff;"><i class="fa fa-arrow-left"></i> back</a> 
                                 <h2 class="item__content-title"><b>The 2019 Theme</b></h2>
@@ -191,7 +196,7 @@
                     <div class="cursor__inner cursor__inner--circle"></div>
                 </div>
                 
-                <section class="section-features">
+                <section class="section-features" id="about">
 
                         <div class="container">
                     
@@ -224,7 +229,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                         </div>
                     
                     </section>
-<section style="position: relative; background: #1e2021; padding: 20em 10%;">
+<section style="position: relative; background: #1e2021; padding: 20em 10%;" >
                     <main style="position: relative;">
                            
                             <div class="slideshow" tabindex="0">
@@ -322,7 +327,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
     .H_btn:hover, .H_rdo li:hover {
     background: #000; }
                     </style>
-                    
+                    <div id="footprint"></div>
                     <div id="map" style="width: 100%; height: 100vh; background: white; margin-top: -40px;" />
                     <script type="text/javascript" src="assets/js/script2.js"></script>
 
@@ -401,20 +406,20 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
 
                           }, false); 
                          
-                         var array = [{"lat":"-26.326080", "lng":"31.146080", "name":"Swaziland", "no_participants":"5", "desc":"Participated in different Hackathons", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-22.957640", "lng":"18.490410", "name":"Namibia", "no_participants":"2", "desc":"Came all the way from Namibia", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-0.091702", "lng":"34.767956", "name":"Kenya", "no_participants":"Gauteng", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-25.969248", "lng":"32.573174", "name":"Mozambique", "no_participants":"17", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-23.896172", "lng":"29.448626", "name":"Polokwane", "no_participants":"14", "desc":"Geeks from the North mostly came through winning different Hackathons", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-29.085215", "lng":"26.159576", "name":"Bloemfontein", "no_participants":"Gauteng", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-25.864550", "lng":"25.642370", "name":"North West", "no_participants":"6", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-33.924870", "lng":"18.424055", "name":"Cape Town", "no_participants":"6", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-29.858681", "lng":"31.021839", "name":"Durban", "no_participants":"4", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-26.187910", "lng":"28.340420", "name":"Ekurhuleni", "no_participants":"Gauteng", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-26.204103", "lng":"28.047304", "name":"Tshwane", "no_participants":"600", "desc":"At the original home of the Geeks and capital city", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-26.204103", "lng":"28.047304", "name":"Johannesburg", "no_participants":"Gauteng", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-30.651680", "lng":"24.013020", "name":"De Aar", "no_participants":"5", "desc":"www.o", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"},
-                         {"lat":"-28.737810", "lng":"24.766211", "name":"Kimberley", "no_participants":"26", "desc":"Kimberley has always been well represented.", "image":"https://live.staticflickr.com/4463/37358835900_2b5f88c773_m_d.jpg"}]
+                         var array = [{"lat":"-26.326080", "lng":"31.146080", "name":"Swaziland", "no_participants":"5", "desc":"Participated in different Hackathons, most recently IgniteHack of 2018.", "image":"https://pbs.twimg.com/media/DzHL2kkWsAADWpq?format=jpg&name=small"},
+                         {"lat":"-22.957640", "lng":"18.490410", "name":"Namibia", "no_participants":"2", "desc":"Came all the way from Namibia", "image":"https://pbs.twimg.com/media/DK-A3NrXcAA_-kz.jpg"},
+                         {"lat":"-0.091702", "lng":"34.767956", "name":"Kenya", "no_participants":"16", "desc":"Hosted by the LakeHub in Kisumu, GKHack15 extended to Kenya", "image":"https://pbs.twimg.com/media/CKlRZEMW8AEriAg?format=jpg&name=small"},
+                         {"lat":"-25.969248", "lng":"32.573174", "name":"Mozambique", "no_participants":"17", "desc":"Coordinated by MozDev, Geeks from Mozambique (Maputo) participated since 2016", "image":"https://pbs.twimg.com/media/DKEaqZxWAAEJPvd?format=jpg&name=small"},
+                         {"lat":"-23.896172", "lng":"29.448626", "name":"Polokwane", "no_participants":"14", "desc":"Geeks from the North mostly came through winning different Hackathons", "image":"https://pbs.twimg.com/media/Dlg2QV9X4AAi2H5?format=jpg&name=360x360"},
+                         {"lat":"-29.085215", "lng":"26.159576", "name":"Bloemfontein", "no_participants":"2", "desc":"From the city of flowers, putting some beautiful things on that code.", "image":"https://pbs.twimg.com/media/DoWI6tFWkAMyWMu?format=jpg&name=small"},
+                         {"lat":"-25.864550", "lng":"25.642370", "name":"North West", "no_participants":"6", "desc":"Geeks from the North West always seek to to represent at top notch.", "image":"https://live.staticflickr.com/7580/27670189154_f16ff5270a_w_d.jpg"},
+                         {"lat":"-33.924870", "lng":"18.424055", "name":"Cape Town", "no_participants":"6", "desc":"Through IgniteHack - the game got real", "image":"https://pbs.twimg.com/media/DoJ9ZOdW0AUw-CR?format=jpg&name=360x360"},
+                         {"lat":"-29.858681", "lng":"31.021839", "name":"Durban", "no_participants":"8", "desc":"From eThekwini to eGoli, Durban Geeks well represented.", "image":"https://live.staticflickr.com/7337/27276676804_b0a75c5cdf_c_d.jpg"},
+                         {"lat":"-26.187910", "lng":"28.340420", "name":"Ekurhuleni", "no_participants":"166", "desc":"Ekurhuleni always came out to take their stand.", "image":"https://live.staticflickr.com/7486/27787380462_ac4d5dbde7_c_d.jpg"},
+                         {"lat":"-26.204103", "lng":"28.047304", "name":"Tshwane", "no_participants":"400", "desc":"At the original home of the Geeks and capital city", "image":"https://live.staticflickr.com/7296/27610761880_cfffb242a4_c_d.jpg"},
+                         {"lat":"-26.204103", "lng":"28.047304", "name":"Johannesburg", "no_participants":"381", "desc":"From the city of Gold, showcasing what they do.", "image":"https://live.staticflickr.com/7537/27853895226_e67fff3545_w_d.jpg"},
+                         {"lat":"-30.651680", "lng":"24.013020", "name":"De Aar", "no_participants":"5", "desc":"All the way from De Aar, the Geeks made it!", "image":"https://pbs.twimg.com/media/DowYBuDXgAAElyV?format=jpg&name=small"},
+                         {"lat":"-28.737810", "lng":"24.766211", "name":"Kimberley", "no_participants":"26", "desc":"Kimberley has always been well represented.", "image":"https://pbs.twimg.com/media/CIcOvhmWUAAw39A?format=jpg&name=small"}]
                          //array[i].no_participants
                           var i;
                       for (i=0; array.length; i++) {
@@ -463,7 +468,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
     background: transparent;
 }
 </style>
-<section class=" ss-style-triangles" style="background: linear-gradient( to bottom, rgba(232, 8, 8, 0.92), /* #c7090985 */ rgba(255, 0, 0, 0.76) /* #00000059 */ ), /* bottom image */ url(assets/img/high-tech.jpg) no-repeat center center / cover; box-shadow: 5px 5px 5px 5px #131619;">
+<section id="reason" class="ss-style-triangles" style="background: linear-gradient( to bottom, rgba(232, 8, 8, 0.92), /* #c7090985 */ rgba(255, 0, 0, 0.76) /* #00000059 */ ), /* bottom image */ url(assets/img/high-tech.jpg) no-repeat center center / cover; box-shadow: 5px 5px 5px 5px #131619;">
         <div class="column text">
             <h2 class="center"><b>Why Attend #GKHack19...</b></h2><br><br>
             <p class="text-white">The Geekulcha Annual Hackathon is the hottest Geek social event of the year that is a must attend and promises a jam-packed line-up.</p>
@@ -518,7 +523,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
 
             </div>
     </section>
-
+<div id="previous"></div>
     <div id="movie-card-list">
         <!-- Card 1: Blade Runner -->
         <div class="movie-card">
@@ -551,9 +556,9 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
 
                     The CPSI is the custodian of IgniteHack and working on helping the teams to - <b><em>to get the solutions into the hands of users.</em></b>
                     </p>
-                    <a class="btn btn-outline" href="https://youtu.be/RfOfcyy9bHk?t=610"><i class="fab fa-youtube"></i> SABC Interview</a>
-                    <a class="btn btn-outline" href="https://bit.ly/SS19Hack"><i class="fab fa-flickr"></i> In Photos</a>
-                    <a class="btn btn-outline" href="https://www.itweb.co.za/content/JN1gPvO1gPgMjL6m"><i class="fa fa-newspaper"></i> The Article</a>
+                    <a class="btn btn-danger" href="https://youtu.be/RfOfcyy9bHk?t=610"><i class="fab fa-youtube"></i> SABC Interview</a>
+                    <a class="btn btn-danger" href="https://bit.ly/SS19Hack"><i class="fab fa-flickr"></i> In Photos</a>
+                    <a class="btn btn-danger" href="https://www.itweb.co.za/content/JN1gPvO1gPgMjL6m"><i class="fa fa-newspaper"></i> The Article</a>
     
                 </div>
             </div>
@@ -566,7 +571,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
     <div class="container section-content">
         <div class="title-wrap mb-5 aos-init aos-animate" data-aos="fade-up"> <br /><br />
             <h2 class="section-title">Previous <b>GKHacks</b></h2>
-            <p class="section-sub-title">Each season change presents a new need to Code</p>
+            <p class="section-sub-title">Bringing African Geeks together to build what matters</p>
         </div>
         <div class="row">
             
@@ -576,29 +581,29 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                     <div class="col-md-3 blog-item-wrapper aos-init aos-animate" data-aos="fade-up">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <a href="../summer"><img height="170px" src="https://live.staticflickr.com/3835/14499777886_718b0c9fb7_z_d.jpg" alt=""/></a>
+                                <a><img src="assets/img/gkhack14.jpg" alt=""/></a>
                             </div>
                             <div class="blog-text">
                                 <div class="blog-tag">
-                                    <a href="#summer"><h6><small>2014</small></h6></a>
+                                    <a><h6><small>2014</small></h6></a>
                                 </div>
                                 <div class="blog-title">
-                                    <a href="../summer"><h4><b>#GKHack14</b></h4></a>
+                                    <a><h3><b>#GKHack14</b></h3></a>
                                 </div>
                                 <div class="blog-meta">
-                                    <p class="blog-date">February 2020</p>
-                                </div>
+                                    <code class="blog-date">27 - 29 June 2014</code>
+                                </div> <hr>
                                 <div class="blog-desc">
-                                    <p>Anything you can Code festival from gaming to IoT, to Apps! Next one ko kasi.</p>
+                                    <p>Themed Making life easy... very first continental of the editions hosted at The Innovation Hub.</p>
                                 </div>
                                 <div class="blog-author">
                                     <p>Pretoria</p>
                                 </div>
                                 <div class="blog-share-wrapper">
-                                    <a class="blog-share" href="google.com">
-                                        <i class="fab fa-facebook-square"></i>
+                                    <a class="blog-share" href="https://www.flickr.com/photos/geekulcha/albums/72157644991359558">
+                                        <i class="fab fa-flickr" title="GKHack14 in photos - Flickr"></i>
                                     </a>
-                                    <a class="blog-share" href="google.com">
+                                    <a class="blog-share" href="https://twitter.com/search?q=%23GKHack14&src=typed_query" title="Tweets">
                                         <i class="fab fa-twitter-square"></i>
                                     </a>
                                 </div>
@@ -609,29 +614,29 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                      <div class="col-md-3 blog-item-wrapper aos-init aos-animate" data-aos="fade-up">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <a href="../summer"><img src="https://live.staticflickr.com/350/19580648035_9be752bb0a_z_d.jpg" alt=""/></a>
+                                <a ><img src="assets/img/gkhack15.jpg" alt=""/></a>
                             </div>
                             <div class="blog-text">
                                 <div class="blog-tag">
-                                    <a href="#summer"><h6><small>2015</small></h6></a>
+                                    <a ><h6><small>2015</small></h6></a>
                                 </div>
                                 <div class="blog-title">
-                                    <a href="../summer"><h4><b>#GKHack15</b></h4></a>
+                                    <a><h3><b>#GKHack15</b></h3></a>
                                 </div>
                                 <div class="blog-meta">
-                                    <p class="blog-date">February 2020</p>
-                                </div>
+                                    <code class="blog-date">27 - 29 June 2015</code>
+                                </div> <hr>
                                 <div class="blog-desc">
-                                    <p>Anything you can Code festival from gaming to IoT, to Apps! Next one ko kasi.</p>
+                                    <p>Themed Hire Geeks, a mission to help more Geeks hired... hosted at T-Systems in Mindrand.</p>
                                 </div>
                                 <div class="blog-author">
                                     <p>Midrand</p>
                                 </div>
                                 <div class="blog-share-wrapper">
-                                    <a class="blog-share" href="google.com">
-                                        <i class="fab fa-facebook-square"></i>
+                                    <a class="blog-share" href="https://flic.kr/s/aHskcuHo87">
+                                        <i class="fab fa-flickr"></i>
                                     </a>
-                                    <a class="blog-share" href="google.com">
+                                    <a class="blog-share" href="https://twitter.com/search?q=%23GKHack15&src=typed_query">
                                         <i class="fab fa-twitter-square"></i>
                                     </a>
                                 </div>
@@ -642,29 +647,29 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                     <div class="col-md-3 blog-item-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <a href="../autumn"><img src="https://live.staticflickr.com/7364/27610456740_9c2801fe51_z_d.jpg" alt=""/></a>
+                                <a ><img src="assets/img/gkhack16.jpg" alt=""/></a>
                             </div>
                             <div class="blog-text">
                                 <div class="blog-tag">
-                                    <a href="../autumn"><h6><small>2016</small></h6></a>
+                                    <a ><h6><small>2016</small></h6></a>
                                 </div>
                                 <div class="blog-title">
-                                    <a href="../autumn"><h4><b>#GKHack16</b></h4></a>
+                                    <a><h3><b>#GKHack16</b></h3></a>
                                 </div>
                                 <div class="blog-meta">
-                                    <p class="blog-date">May 2019</p> 
-                                </div>
+                                    <code class="blog-date">24 - 26 June 2016</code> 
+                                </div> <hr>
                                 <div class="blog-desc">
-                                    <p>All things Data - prepare Data understanding for the world of Amplified Intelligence.</p>
+                                    <p>Themed Smart Growing World... local Geeks got imagine and build solutions to help adapt.</p>
                                 </div>
                                 <div class="blog-author">
                                     <p>Lynnwood</p>
                                 </div>
                                 <div class="blog-share-wrapper">
-                                    <a class="blog-share" href="google.com">
-                                        <i class="fab fa-facebook-square"></i>
+                                    <a class="blog-share" href="https://flic.kr/s/aHskDBF2ds">
+                                        <i class="fab fa-flickr"></i>
                                     </a>
-                                    <a class="blog-share" href="google.com">
+                                    <a class="blog-share" href="https://twitter.com/search?q=%23GKHack16&src=typed_query">
                                         <i class="fab fa-twitter-square"></i>
                                     </a>
                                 </div>
@@ -675,30 +680,30 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                     <div class="col-md-3 blog-item-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <a href="../spring"><img src="https://live.staticflickr.com/4464/36946698683_7720f3a77d_z_d.jpg" alt=""/></a>
+                                <a><img src="assets/img/gkhack17.jpg" alt=""/></a>
                             </div>
                             <div class="blog-text">
                                 <div class="blog-tag">
-                                    <a href="../spring"><h6><small>2017</small></h6></a>
+                                    <a ><h6><small>2017</small></h6></a>
                                 </div>
                                 <div class="blog-title">
-                                    <a href="#spring"><h4><b>#GKHack17</b></h4></a>
+                                    <a><h3><b>#GKHack17</b></h3></a>
                                 </div>
                                 <div class="blog-meta">
-                                    <p class="blog-date">September 2019</p>
-                                </div>
+                                    <code class="blog-date">29 - 01 October 2017</code>
+                                </div> <hr>
                                 <div class="blog-desc">
-                                    <p>Civic Tech focused - building smart solutions that  of Governance in the 4IR.
+                                    <p>Collaborative Digital Economy... hosted at the Liberty Group, solutions for various sectors.
                                     </p>
                                 </div>
                                 <div class="blog-author">
                                     <p>Braamfontein</p>
                                 </div>
                                 <div class="blog-share-wrapper">
-                                    <a class="blog-share" href="google.com">
-                                        <i class="fab fa-facebook-square"></i>
+                                    <a class="blog-share" href="https://flic.kr/s/aHsm6tiBGP">
+                                        <i class="fab fa-flickr"></i>
                                     </a>
-                                    <a class="blog-share" href="google.com">
+                                    <a class="blog-share" href="https://twitter.com/search?q=%23GKHack17&src=typed_query">
                                         <i class="fab fa-twitter-square"></i>
                                     </a>
                                 </div>
@@ -713,25 +718,27 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
     </div>
 </div> 
 
-<section style="background: #ff0000e6;">
+<section style="background: #ff0000e6;" id="startups">
 <div class="container">
         <div class="title-wrap mb-5 aos-init aos-animate" data-aos="fade-up">
             <h2 class="section-title">Highlighted <b>Projects/Startups</b></h2>
-            <p class="section-sub-title">Each season change presents a new need to Code</p>
+            <p class="section-sub-title" style="color: #ccc;">Creating and Enabling impact through Hackathons</p>
         </div>
 <div class="row">
     <div class="col-md-4">
         <div class="card text-left left">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://live.staticflickr.com/4449/23764308328_f008049ca2_z_d.jpg">
+              <img class="activator" src="assets/img/projects/info4africa.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-cogs right"></i></span>
+              <span class="card-title activator grey-text text-darken-4">Info4Africa App<i class="fa fa-mobile right"></i></span>
              
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-window-close right"></i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Info4Africa App<i class="fa fa-window-close right"></i></span>
+              <p>Mobile channels are created, expand, evolve and sometimes fail, but their central purpose – to facilitate 
+                  engagement and communication – remains the same. AAT draws on this as a purposeful planning principle, enabling the development team to maintain a single core of regulatory business logic (read: CPA and PoPI compliant!) through a central hosted database while 
+                  exposing the vital information across multiple device agnostic channels.</p>
             </div>
           </div>
         </div>
@@ -739,15 +746,17 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
         <div class="col-md-4">
                 <div class="card text-left left">
                     <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="https://live.staticflickr.com/4449/23764308328_f008049ca2_z_d.jpg">
+                      <img class="activator" src="assets/img/projects/bulatsela.jpeg">
                     </div>
                     <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-cogs right"></i></span>
+                      <span class="card-title activator grey-text text-darken-4">Bulatsela<i class="fa fa-cogs right"></i></span>
                      
                     </div>
                     <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-window-close right"></i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      <span class="card-title grey-text text-darken-4">Bulatsela<i class="fa fa-window-close right"></i></span>
+                      <p>Nkululeko Ntuzi created a product, called Bulatsela, uses cutting-edge artificial intelligence (AI) and machine learning features to interpret surroundings.
+<br><br>
+                            “It helps detect objects and obstacles, creates a path and provides feedback to the blind person,”</p>
                     </div>
                   </div>
                 </div>
@@ -755,7 +764,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                 <div class="col-md-4">
                         <div class="card text-left left">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="https://live.staticflickr.com/4447/37617590721_97f96db452_z_d.jpg">
+                              <img class="activator" src="assets/img/projects/smart-water-tank.jpg">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4">Smart Water Tank<i class="fa fa-cogs right"></i></span>
@@ -763,51 +772,51 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                             </div>
                             <div class="card-reveal">
                               <span class="card-title grey-text text-darken-4">Smart Water Tank<i class="fa fa-window-close right"></i></span>
-                              <p>Led by Moses Mhlwana, the project went open to win various awards in different competitions.</p>
+                              <p>and his three friends have created a prototype of a smart water tank that saves water by enabling water users to digitally select the amount of water they need. It then releases the exact amount of water required. In cases of errors resulting in water spills‚ it would not be wasted.</p>
                             </div>
                           </div>
                         </div>
                         <div class="col-md-4">
                                 <div class="card text-left left">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                      <img class="activator" src="https://live.staticflickr.com/4449/23764308328_f008049ca2_z_d.jpg">
+                                      <img class="activator" src="assets/img/projects/ndp-app.jpeg">
                                     </div>
                                     <div class="card-content">
-                                      <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-cogs right"></i></span>
+                                      <span class="card-title activator grey-text text-darken-4">NDP App<i class="fa fa-tasks right"></i></span>
                                      
                                     </div>
                                     <div class="card-reveal">
-                                      <span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-window-close right"></i></span>
-                                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                      <span class="card-title grey-text text-darken-4">NDP App<i class="fa fa-window-close right"></i></span>
+                                      <p>Act NDP" App that gives young people the ability to connect with government and youth</p>
                                     </div>
                                   </div>
                                 </div><div class="col-md-4">
                                         <div class="card text-left left">
                                             <div class="card-image waves-effect waves-block waves-light">
-                                              <img class="activator" src="https://live.staticflickr.com/4449/23764308328_f008049ca2_z_d.jpg">
+                                              <img class="activator" src="assets/img/projects/open-kasi.jpeg">
                                             </div>
                                             <div class="card-content">
-                                              <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-cogs right"></i></span>
+                                              <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-calculator right"></i></span>
                                              
                                             </div>
                                             <div class="card-reveal">
-                                              <span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-window-close right"></i></span>
-                                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                              <span class="card-title grey-text text-darken-4">Open Kasi<i class="fa fa-window-close right"></i></span>
+                                              <p>OpenKasi provides accounting solution for township vendors - stock management, analytics dashboard, turnover</p>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                                 <div class="card text-left left">
                                                     <div class="card-image waves-effect waves-block waves-light">
-                                                      <img class="activator" src="https://live.staticflickr.com/4449/23764308328_f008049ca2_z_d.jpg">
+                                                      <img class="activator" src="assets/img/projects/moringa-iot.jpg">
                                                     </div>
                                                     <div class="card-content">
-                                                      <span class="card-title activator grey-text text-darken-4">Open Kasi<i class="fa fa-cogs right"></i></span>
+                                                      <span class="card-title activator grey-text text-darken-4">Moringa IoT<i class="fa fa-leaf right"></i></span>
                                                      
                                                     </div>
                                                     <div class="card-reveal">
-                                                      <span class="card-title grey-text text-darken-4">Card Title<i class="fa fa-window-close right"></i></span>
-                                                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                                      <span class="card-title grey-text text-darken-4">Moringa IoT<i class="fa fa-window-close right"></i></span>
+                                                      <p>They use IoT and Moringa to improve food security.</p>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -816,12 +825,12 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
 </div>
 </section>
 
-<section style="background: #fff; padding: 30px;"><br><br>
+<section style="background: #fff; padding: 30px;" id="partners"><br><br>
     <div class="">
             <div class="row" id="partners" style="margin-bottom: 0px;"><br><br>
                 <div class="col s12">
                   <h2 class="text-black"><b>Sponsors And Partners</b></h2> <br>
-                    <p>The following are the organizations helping make the Train Tour Hackathon possible. Your organization can also help support, check the <a href="mailto:info@geekulcha.com"><b>Sponsor #GKHack19</b></a>.</p>
+                    <p>The following are the organizations helping make the Geekulcha Annual Hackathon possible. Your organization can also help support, check the <a href="mailto:info@geekulcha.com"><b>Sponsor #GKHack19</b></a>.</p>
                     <hr><br>
                 </div> <br> 
                 
@@ -832,7 +841,7 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
             <div class="col-md-3">
           <div class="card3">
             <div class="card-image2">
-               <a href="https://www.geekulcha.com" data-title="Geekulcha" target="_blank"> <img class="" src="https://africatravelhack.zulunomad.com/assets/img/geekulcha_white.png"></a>
+               <a href="http://www.cpsi.co.za/" data-title="Centre for Public Service Innovation" target="_blank"> <img class="" src="assets/img/partners/cpsi.png" style="margin-left: 8%;"></a>
             </div>
           </div>
         </div>
@@ -849,22 +858,38 @@ This will be a 42-hour Hackathon, all weekend of Code and no sleep. Participants
                 <div class="col-md-3">
           <div class="card3">
             <div class="card-image2">
-               <a href="https://www.spu.ac.za" data-title="Sol Plaatje University - Kimberley" target="_blank"> <img class="" src="https://africatravelhack.zulunomad.com/assets/img/Sol-Plaatje-University.jpg" style="margin-left: 30%;"></a>
+               <a href="https://her.is/mea" data-title="HERE Technologies" target="_blank"> <img class="" src="assets/img/partners/here.png" style="margin-left: 30%;"></a>
             </div>
           </div>
         </div>
+
+        <div class="col-md-3">
+                <div class="card3">
+                  <div class="card-image2">
+                     <a href="https://www.22onsloane.co/home/" data-title="22 On Sloane" target="_blank"> <img class="" src="assets/img/partners/22onsloane.png" style="margin-left: 0%;"></a>
+                  </div>
+                </div>
+              </div>   
+
+        <div class="col-md-3">
+                <div class="card3">
+                  <div class="card-image2">
+                     <a href="http://www.cybersec.co.za/" data-title="CyberSec" target="_blank"> <img class="" src="assets/img/partners/CyberSec.png" style="margin-left: 0%;"></a>
+                  </div>
+                </div>
+              </div>
          
             <div class="col-md-3">
           <div class="card3">
             <div class="card-image2">
-               <a href="https://www.itweb.co.za/" data-title="ITWeb Publications - Media Aboard" target="_blank"> <img class="" src="https://africatravelhack.zulunomad.com/assets/img/itweb_logo.png" style="margin-left: 20%;"></a>
+               <a href="https://www.itweb.co.za/" data-title="ITWeb Publications - Media Aboard" target="_blank"> <img class="" src="assets/img/partners/itweb.png" style="margin-left: 20%;"></a>
             </div>
           </div>
         </div>
             <div class="col-md-3">
           <div class="card3">
             <div class="card-image2">
-               <a href="https://www.redbull.com/za-en/events/red-bull-basement-hatch-southafrica" data-title="Red Bull Basement South Africa" target="_blank"> <img class="" src="https://africatravelhack.zulunomad.com/assets/img/redbull.png" style="margin-left: 30%;"></a>
+               <a href="https://www.redbull.com/za-en/events/red-bull-basement-hatch-southafrica" data-title="Red Bull Basement South Africa" target="_blank"> <img class="" src="assets/img/partners/redbull.png" style="margin-left: 30%;"></a>
             </div>
           </div>
         </div>
